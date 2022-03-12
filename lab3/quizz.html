@@ -33,7 +33,7 @@
     </h3>
 
     <p>Nesta pagina sera apresentado um quizz, que ira testar o teu conhecimento sobre Montreal </p>
-
+<form method="POST" action="mailto: 123@gmail.com" enctype="multipart/form-data">
     <fieldset>
         <legend>
             Quizz sobre Montreal
@@ -50,7 +50,7 @@
             <fieldset>
                 <p>
                     Montreal e uma cidade do :
-                    <input  type="text" , name="1" , placeholder="Escreve Aqui o Pais">
+                    <input  type="text"  name="1"  placeholder="Escreve Aqui o Pais"  autocomplete="on"  maxlength = "100">
                 </p>
             </fieldset>
             <fieldset>
@@ -79,36 +79,75 @@
                     431,50 km²
                     <input type="checkbox", name = "3" , id = "3.1">
                 </p>
-            </fieldset>
-            <fieldset>
                 <p>
-                    <input type="date">
+                     1,531,50 km²
+                     <input type="checkbox", name = "3" , id = "3.2">
+                </p>
+                <p>
+                     5,786,38 km²
+                     <input type="checkbox", name = "3" , id = "3.3">
                 </p>
             </fieldset>
             <fieldset>
                 <p>
-                    <input type="image">
+                    <p>Indique a Data Atual de Resposta ao Quizz
+            </p>
+                    <input type="date" name ="4">
                 </p>
             </fieldset>
             <fieldset>
-                <p>
-                    <input type="color">
-                </p>
+               <p>
+                        <label for="imagem">Fotografia:</label>
+                        <input type="file" id="imagem" name="fileName">
+                    </p>
             </fieldset>
             <fieldset>
                 <p>
-                    <input type="number">
-                </p>
-            </fieldset>
-            <fieldset>
                 <p>
-                    <input type="range">
+                Escolhe uma Cor
+            </p>
+                    <input type="color", name = "5">
                 </p>
             </fieldset>
 
+            <fieldset>
+                <p>De 0 a 10 Quanto gostas da Cultura de Montreal</p>
+                <p>
+                    <input type="range" , name ="6">
+                </p>
+            </fieldset>
+            <fieldset>
+            Gostavas de conhecer Montreal
+                        <p>
+                            <label for="7">Resposta:</label>
+                            <select id="7" name="7">
+                                <option value="Sim">Sim</option>
+                                <option value="Não">Não</option>
+                            </select>
+                        </p>
+                </fieldset>
+            <fieldset>
+                <p>
+                    De 0 a 5 Quanto Gostastes do Quizz
+                </p>
+                <p>
+                    <input type="number" , min = "0" , max = "5" , name = "8">
+                </p>
+            </fieldset>
+
+
+            <fieldset>
+                <p>Deixa um pequeno Comentário</p>
+                <textarea>
+
+                </textarea>
+            </fieldset>
+            <legend>Submit</legend>
+            <input type="image" src="images/submitt.jpg" alt="Submit" width="48" height="48">
         </fieldset>
 
     </fieldset>
+    </form>
 
 </main>
 </body>
