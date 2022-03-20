@@ -1,0 +1,47 @@
+*{ /todas as letras*/
+    font-family: "Times New Roman", Times, serif;
+}
+
+p::first-letter {
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+
+
+}
+
+
+h1{color: brown}
+
+
+.bold{
+    font-weight: bold;
+}
+#blessed{
+    background: white;
+}
+
+a {
+
+        }
+        [target=_blank]{
+            background-color: grey;
+        }
+
+        a:hover{background-color:yellow}
+td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: center;
+}
+p::first-letter{
+    font-size: 2em;
+}
+
+table{
+    margin: 2px;
+    border: 5px solid black;
+}
+
+
