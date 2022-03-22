@@ -6,7 +6,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Lobster&family=Stint+Ultra+Condensed&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Lobster&family=Stint+Ultra+Condensed&display=swap');
 
         * {
             box-sizing: border-box;
@@ -70,8 +70,9 @@
             display: flex;
             padding: 20px;
             text-decoration: none;
-            color: red;
+            color: black;
         }
+
 
         .menu:hover {
             background: lightgrey;
@@ -83,6 +84,26 @@
             justify-content: center;
             align-items: center;
 
+        }
+
+
+        a {
+            font-family: Arial, serif;
+            padding: 20px;
+            text-decoration: none;
+            color: black;
+
+
+            background-color: LightGrey;
+            margin: 5px;
+            text-decoration: none;
+            box-shadow: 4px 9px 9px darkblue;
+            border-radius: 30px;
+        }
+
+        a:hover {
+            background-color: aqua;
+            font-weight: bold;
         }
 
         nav a:last-child {
@@ -106,34 +127,219 @@
         }
 
 
+        .button {
+            position: relative;
+            background-color: grey;
+            border: none;
+            color: black;
+            left: 1570px;
+            bottom: 280px;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            display: flex;
+            font-size: 16px;
+            margin: 110px 200px;
+            cursor: pointer;
+            box-shadow: 2px 3px 3px Black;
+            border-radius: 10px;
+        }
+        .button:hover{
+                background-color: cadetblue;
+
+            }
+
         .titulo {
             margin: 0;
 
             background-color: aqua;
         }
 
-        .dicas {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: aqua;
+
+        @media (min-width: 901px) {
+
+            .dicas {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: aqua;
+            }
+
+
+            .dicas div {
+                flex: 1 0 21%;
+                margin: 30px;
+                width: 130px;
+                height: 520px;
+                box-shadow: 4px 9px 9px darkblue;
+                border-radius: 30px;
+                background-color: lightgrey;
+                padding: 10px 20px
+
+            }
+
+            .destinos {
+                font-family: Arial, serif;
+                height: 600px;
+                display: grid;
+                background-color: aqua;
+                grid-template-columns: 24% 24% 24% 28%;
+                grid-template-rows: 50%  50%;
+                grid-template-areas:"braga coimbra faro ericeira"
+                        "porto porto evora .";
+                justify-content: space-between;
+                gap: 5px;
+
+
+            }
+
+            .porto {
+                background-image: url("images/porto.jpg");
+                background-size: cover;
+                grid-area: porto;
+            }
+
+            .braga {
+                background-image: url("images/braga.jpg");
+                background-size: cover;
+                grid-area: braga;
+            }
+
+            .ericeira {
+                background-image: url("images/ericeira.jpg");
+                background-size: cover;
+                grid-area: ericeira;
+            }
+
+            .faro {
+                background-image: url("images/faro.jpg");
+                background-size: cover;
+                grid-area: faro;
+            }
+
+            .coimbra {
+                background-image: url("images/Coimbra.png");
+                background-size: cover;
+                grid-area: coimbra;
+            }
+
+            .evora {
+                background-image: url("images/evora.jpg");
+                background-size: cover;
+                grid-area: evora;
+            }
+
+            .tipo {
+                color: antiquewhite;
+            }
+
+            .nome {
+                position: relative;
+                color: white;
+                font-size: xx-large;
+                top: 120px;
+                left: 20px;
+            }
+
+            .nome2 {
+                position: relative;
+                color: white;
+                top: 100px;
+                left: 20px;
+            }
         }
 
+        @media (max-width: 900px) {
+            .dicas {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: aqua;
+            }
 
-        .dicas div {
-            flex: 1 0 21%;
-            margin: 30px;
-            width: 130px;
-            height: 520px;
-            box-shadow: 4px 9px 9px darkblue;
-            border-radius: 30px;
-            background-color: lightgrey;
-            padding: 10px 20px
 
+            .dicas div {
+                flex: 1 0 21%;
+                margin: 30px;
+                width: 250px;
+                height: 1050px;
+                box-shadow: 4px 9px 9px darkblue;
+                border-radius: 30px;
+                background-color: lightgrey;
+                padding: 10px 20px
+
+            }
+
+            .destinos {
+                font-family: Arial, serif;
+                height: 600px;
+                display: grid;
+                background-color: aqua;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 50%  50% 50% 50%;
+                grid-template-areas:"braga coimbra"
+                "faro ericeira"
+                "porto porto"
+                "evora .";
+                justify-content: space-between;
+                padding: 10px;
+                gap: 10px;
+            }
+
+            .porto {
+                background-image: url("images/porto.jpg");
+                background-size: cover;
+                grid-area: porto;
+            }
+
+            .braga {
+                background-image: url("images/braga.jpg");
+                background-size: cover;
+                grid-area: braga;
+            }
+
+            .ericeira {
+                background-image: url("images/ericeira.jpg");
+                background-size: cover;
+                grid-area: ericeira;
+            }
+
+            .faro {
+                background-image: url("images/faro.jpg");
+                background-size: cover;
+                grid-area: faro;
+            }
+
+            .coimbra {
+                background-image: url("images/Coimbra.png");
+                background-size: cover;
+                grid-area: coimbra;
+            }
+
+            .evora {
+                background-image: url("images/evora.jpg");
+                background-size: cover;
+                grid-area: evora;
+            }
+
+
+            .tipo {
+                color: antiquewhite;
+            }
+
+            .nome {
+                position: relative;
+                color: white;
+                font-size: xx-large;
+                top: 120px;
+                left: 20px;
+            }
+
+            .nome2 {
+                position: relative;
+                color: white;
+                top: 100px;
+                left: 20px;
+            }
         }
-        .letranormal{
-            font-family:sans-serif;
-        }
-
 
         /*  https://fonts.google.com/specimen/Smooch+Sans */
     </style>
@@ -149,6 +355,7 @@
     <div class="menu">
         <a href="#c1">Capitais europeias</a>
         <a href="#c2">Dicas para viajantes</a>
+        <a href="#c3">Destinos de Sonho</a>
         <a href="../">Home </a>
 
     </div>
@@ -227,56 +434,136 @@
 <h1 id="c2" class="titulo">Dicas para viajantes</h1>
 <div class="dicas">
 
-    <div><h2 style="font-weight: bold">Dica 1: Pensar na Sua Saude <i style='font-size:24px' class='fas'>&#xf21e;</i></h2>
+    <div><h2 style="font-weight: bold">Dica 1: Pensar na Sua Saude <i style='font-size:24px' class='fas'>&#xf21e;</i>
+    </h2>
 
 
-
-        <p>Antes de viajar tem de pensar se tem saude para esta viagem, e o que ira fazer caso aconteca alguma irregularidade no estrangeiro, a melhor opcao e sempre fazer um seguro de saude</p>
+        <p>Antes de viajar tem de pensar se tem saude para esta viagem, e o que ira fazer caso aconteca alguma
+            irregularidade no estrangeiro, a melhor opcao e sempre fazer um seguro de saude</p>
     </div>
 
     <div>
-        <h2 style="font-weight: bold">Dica 2: Pensar na Bagagem <i style='font-size:24px' class='fas'>&#xf5c1;</i> </h2>
-        <p>Antes de viajar tem sempre de pensar o que ira levar consigo, desde roupa adequada ao clima, guias turisticos, e todos os aparelhos eletronicos necessarios </p>
+        <h2 style="font-weight: bold">Dica 2: Pensar na Bagagem <i style='font-size:24px' class='fas'>&#xf5c1;</i></h2>
+        <p>Antes de viajar tem sempre de pensar o que ira levar consigo, desde roupa adequada ao clima, guias
+            turisticos, e todos os aparelhos eletronicos necessarios </p>
     </div>
 
     <div>
         <h2 style="font-weight: bold">Dica 3: Verificar a moeda <i style='font-size:24px' class='fab'>&#xf379;</i></h2>
-        <p>Quando se viaja para o estrangeiro deve se verificar qual a sua moeda, ou crypto de forma a adquirir a mesma para fazer os pagamentos</p>
+        <p>Quando se viaja para o estrangeiro deve se verificar qual a sua moeda, ou crypto de forma a adquirir a mesma
+            para fazer os pagamentos</p>
     </div>
 
     <div>
         <h2 style="font-weight: bold">Dica 4: Fuja de roteiros obvios <i style='font-size:24px' class='fas'>&#xf5a0;</i>
-</h2>
-        <p>Ao fugir de roteiros obvios nao ira encontrar tanta confusao e podera acabar por ver coisas mais interessantes para si, apesar de os restantes nao o considerarem</p>
+        </h2>
+        <p>Ao fugir de roteiros obvios nao ira encontrar tanta confusao e podera acabar por ver coisas mais
+            interessantes para si, apesar de os restantes nao o considerarem</p>
     </div>
 
     <div>
-         <h2 style="font-weight: bold">Dica 5: Alojamento <i style='font-size:24px' class='fas'>&#xf236;</i></h2>
-        <p>Ao viajar e necessario ponderar onde ficara alojado, uma boa zona permite poupar bastante tempo e dinheiro em transportes</p>
+        <h2 style="font-weight: bold">Dica 5: Alojamento <i style='font-size:24px' class='fas'>&#xf236;</i></h2>
+        <p>Ao viajar e necessario ponderar onde ficara alojado, uma boa zona permite poupar bastante tempo e dinheiro em
+            transportes</p>
 
     </div>
 
     <div>
-         <h2 style="font-weight: bold">Dica 6: Aviao <i style='font-size:24px' class='fas'>&#xf5b0;</i>
-</h2>
+        <h2 style="font-weight: bold">Dica 6: Aviao <i style='font-size:24px' class='fas'>&#xf5b0;</i>
+        </h2>
         <p>
-            Ao viajar pense na companhia em que vai, pois esta pode ter consequencia, como a perda de bagagem. O conforto e a seguranca durante a viagem
+            Ao viajar pense na companhia em que vai, pois esta pode ter consequencia, como a perda de bagagem. O
+            conforto e a seguranca durante a viagem
         </p>
     </div>
 
     <div>
-         <h2 style="font-weight: bold">Dica 7: Destino<i style='font-size:24px' class='fas'>&#xf57c;</i></h2>
+        <h2 style="font-weight: bold">Dica 7: Destino<i style='font-size:24px' class='fas'>&#xf57c;</i></h2>
         <p>
-            Escolha bem o seu destino, podendo incorporar varios destinos numa so viagem, filtrando pelo tipo de atividade que mais gosta de fazer
+            Escolha bem o seu destino, podendo incorporar varios destinos numa so viagem, filtrando pelo tipo de
+            atividade que mais gosta de fazer
         </p>
     </div>
 
     <div>
-         <h2 style="font-weight: bold">Dica 8: Ultima dica <i style='font-size:24px' class='fas'>&#xf57b;</i></h2>
+        <h2 style="font-weight: bold">Dica 8: Ultima dica <i style='font-size:24px' class='fas'>&#xf57b;</i></h2>
         <p>Ultima dica mas não menos importante, não se esqueça de se divertir e de aproveitar </p>
     </div>
 
 
+</div>
+<h1 id="c3" class="titulo">Destinos de sonho</h1>
+
+<div class="destinos">
+    <div class="coimbra">
+        <div class="tipo">
+            Cultural
+        </div>
+        <div class="nome">
+            Coimbra
+        </div>
+        <div class="nome2">
+            Estudantes
+        </div>
+    </div>
+
+    <div class="braga">
+        <div class="tipo" style="color: black">
+            Cultural
+        </div>
+        <div class="nome">
+            Braga
+        </div>
+        <div class="nome2">
+            Passear
+        </div>
+    </div>
+
+    <div class="faro">
+        <div class="tipo">
+            Praia
+        </div>
+        <div class="nome">
+            Faro
+        </div>
+        <div class="nome2">
+            Lazer
+        </div>
+    </div>
+
+    <div class="porto">
+        <div class="tipo" style="color: black">
+            Futebol
+        </div>
+        <div class="nome" style="color: black">
+            Porto
+        </div>
+        <div class="nome2" style="color: black">
+            Passear
+        </div>
+    </div>
+
+    <div class="evora">
+        <div class="tipo">
+            Cultural
+        </div>
+        <div class="nome" style="color: black">Evora</div>
+        <div class="nome2" style="color: black">
+            Descanco
+        </div>
+    </div>
+
+    <div class="ericeira">
+        <div style="color: black" class="tipo">
+            Praia
+        </div>
+        <div class="nome">Ericeira</div>
+        <div class="nome2">
+            Lazer
+        </div>
+    </div>
+    <center><div>Se quiseres experiencias mais baratas</div></center>
+    <div class="button">Clica aqui!</div>
 </div>
 
 
