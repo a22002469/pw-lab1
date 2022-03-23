@@ -10,10 +10,14 @@
 
         * {
             box-sizing: border-box;
+
         }
 
         * {
             font-family: Bungee Shade, serif;
+        }
+        .bbody{
+            overflow-x: hidden;
         }
 
         h1 {
@@ -71,6 +75,8 @@
             padding: 20px;
             text-decoration: none;
             color: black;
+            width: auto;
+            height: auto;
         }
 
 
@@ -118,10 +124,8 @@
             background-image: url("images/heade.png.jpg");
             background-size: 100%;
             padding: 200px;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            width: auto;
+            height: auto;
             background-repeat: no-repeat;
 
         }
@@ -132,7 +136,7 @@
             background-color: grey;
             border: none;
             color: black;
-            left: 1570px;
+            left: 1370px;
             bottom: 280px;
             align-items: center;
             justify-content: center;
@@ -162,6 +166,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 background-color: aqua;
+
             }
 
 
@@ -171,7 +176,7 @@
                 width: 130px;
                 height: 520px;
                 box-shadow: 4px 9px 9px darkblue;
-                border-radius: 30px;
+                border-radius: 10px;
                 background-color: lightgrey;
                 padding: 10px 20px
 
@@ -179,10 +184,12 @@
 
             .destinos {
                 font-family: Arial, serif;
+                width: auto;
+                margin: auto;
                 height: 600px;
                 display: grid;
                 background-color: aqua;
-                grid-template-columns: 24% 24% 24% 28%;
+                grid-template-columns: 24% 24% 24% 26%;
                 grid-template-rows: 50%  50%;
                 grid-template-areas:"braga coimbra faro ericeira"
                         "porto porto evora .";
@@ -196,36 +203,42 @@
                 background-image: url("images/porto.jpg");
                 background-size: cover;
                 grid-area: porto;
+                width: auto;
             }
 
             .braga {
                 background-image: url("images/braga.jpg");
                 background-size: cover;
                 grid-area: braga;
+                width: auto;
             }
 
             .ericeira {
                 background-image: url("images/ericeira.jpg");
                 background-size: cover;
                 grid-area: ericeira;
+                width: auto;
             }
 
             .faro {
                 background-image: url("images/faro.jpg");
                 background-size: cover;
                 grid-area: faro;
+                width: auto;
             }
 
             .coimbra {
                 background-image: url("images/Coimbra.png");
                 background-size: cover;
                 grid-area: coimbra;
+                width: auto;
             }
 
             .evora {
                 background-image: url("images/evora.jpg");
                 background-size: cover;
                 grid-area: evora;
+                width: auto;
             }
 
             .tipo {
@@ -238,6 +251,7 @@
                 font-size: xx-large;
                 top: 120px;
                 left: 20px;
+                width: auto;
             }
 
             .nome2 {
@@ -245,6 +259,7 @@
                 color: white;
                 top: 100px;
                 left: 20px;
+                width: auto;
             }
         }
 
@@ -347,7 +362,7 @@
 
     <title>Laboratorio 4: SPA com layout responsivo baseado em Flexbox e Grid</title>
 </head>
-<body>
+<body class="bbody">
 
 
 <!--inicio cabeçalho -->
