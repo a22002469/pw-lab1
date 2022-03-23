@@ -3,14 +3,48 @@
 <head>
     <meta charset = "UTF-8">
     <title>PW Labs</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Lobster&family=Open+Sans&family=Stint+Ultra+Condensed&display=swap');
+        *{
+            font-family: Opensans, Arial,serif;
+            overflow-x: hidden;
+
+            font-size: 40px;
+        }
+        .titulo{
+            position: absolute;
+        }
+        .body{
+            position: absolute;
+            top: 200px;
+        }
+        .video{
+            overflow-x: hidden;
+            overflow-y:  hidden;
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+
+
+            margin: 10px;
+            border-radius: 50px;
+        }
+        a:hover{
+            background-color: red;
+        }
+    </style>
 
 
 </head>
 <body>
-<h1>Programação Web: Laboratórios</h1>
+<center><h1 class="titulo">Programação Web: Laboratórios</h1></center>
 
-    <video src="video/video.mp4" muted loop autoplay></video>
-<ul>
+    <video class="video" src="video/video.mp4" muted loop autoplay></video>
+<ul class="body">
     <li>
         <a href ="lab1/index.html"> Laboratório 1: Conhecer a Internet com a minha primeira página Web </a>
         <p> <a href = "lab2/index.html" > Laboratório 2: Explorando o HTML com o meu primeiro website </a> </p>
